@@ -16,7 +16,6 @@ let hero = {
     }
 };
 
-
 // Defined the funtions rest, pickUpItem, equipWeapon
 // function rest with no paramerters takes an object ne as an argument named 
 // I was trying to reassign the health hero of the previous object in the object of 
@@ -24,16 +23,16 @@ let hero = {
 
 function rest() {
     function health () {
-        const testCreature2  = {health: 2} 
-        const testCreature4 = {health: 4}
+        const Creature2  = {health: 2} 
+        const Creature4 = {health: 4}
 
-        rest(testCreature2)
-        rest(testCreature4)
+        rest(Creature2)
+        rest(Creature4)
    }
     
     function testC() {
-        const testCreature = {}
-        const outPut = rest(testCreature)
+        const Creature = {}
+        const outPut = rest(Creature)
     }
 }
 
@@ -82,19 +81,26 @@ function equipWeapon() {
                     type: 'sword',
                     deamge: 0
                 }
-                const testWeapon = testHero.weapon
-                
-                equipWeapon(testHero)
-                
-            }
+             }
+             const testWeapon = testHero.weapon
+             const inventoryWeapon = testHero.inventory[0]
+             equipWeapon(testHero)
         }
         let pickUpHero = []
     }
     
-
-    // if (pickUpHero = 0){
-    //     console.log()
-    // }
+function(){
+    
+    const testHero = { 
+        weapon: { type: 'sword',
+        damage: 5 }, 
+        inventory: [] 
+    }
+    const testWeapon = testHero.weapon
+    equipWeapon(testHero)
+    expect(testHero.weapon, 'Empty inventory, but the hero`s weapon has been removed').to.equal(testWeapon)
+}
+  
 }
 
 
@@ -110,7 +116,7 @@ function UiEquipWeapon() {
             deamge: 0
         }
         hero.inventory[0] = testWeapon
-        document.getElementById('bag').click()
+        let bagClicked = document.getElementById('bag').addEventListener("click");
         hero.weapon = test.weapon
         if(hero){
             hero.inventory = []
