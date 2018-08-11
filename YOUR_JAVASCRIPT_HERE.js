@@ -17,9 +17,8 @@ let hero = {
 };
 
 // Defined the funtions rest, pickUpItem, equipWeapon
-// function rest with no paramerters takes an object ne as an argument named 
-// I was trying to reassign the health hero of the previous object in the object of 
-// function rest but it is not working. 
+// function rest with no paramerters takes an object ne as an argument named health
+
 
 function rest() {
     function health () {
