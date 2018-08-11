@@ -18,51 +18,115 @@ let hero = {
 
 // Defined the funtions rest, pickUpItem, equipWeapon
 // function rest with no paramerters takes an object ne as an argument named 
-// numberHealth in the numberHealth object the hero value of health will
-// be reassinged to 2. 
+
 // I was trying to reassign the health hero of the previous object in the object of 
 // function rest but it is not working. 
 
-
 function rest() {
-// rest takes an object as an argument so made an new object 
-// and then tryed to reassign the value of hero health from the previous global object(hero)
-   let numberHealth = {
-    health2: hero.health = 2 
+    function rest2() {
+        const testCreature2  = {health: 2} 
+        const testCreature4 = {health: 4}
+       
     }
- 
+    rest(testCreature2)
+    rest(testCreature4)
+
+    fuction(){
+        const testCreature = {}
+        const outPut = rest2(testCreature)
+    }
+}
+
+function UIforRest() {
+  function idInn() {
+    cosnt innUI = document.getElementById('inn')
+  }
+
+function clickHealth(){
+    hero.health = 10
+    document.getElementById('inn').click()
+    // expect(hero.health).to.equal(10) ??
+    
+    const checkRest = document.getElementsByClassName('inn').addEventListener("click"); 
+}
+return rest 
+
+}
+
+
+
+//   I thought is was more like this but then I get more errors
 //   let numberHealth = {
 //   newhealth = hero.health[2] 
 //   hero.health = 2 
 //   }
 
-    return numberHealth // here I return the object numberHealth<-(wich is not working) 
-    const checkRest = document.getElementsByClassName('inn').addEventListener("click"); //calling the  
-}
 
 
-
+//
+//
+//
 function pickUpItem() {
 
-    let pickUpHero = {
-     weapon: ['name', 'heroic', 'inventory', 'health', 'weapon']; // array stored in object called 
+    const newHero = {
+        const testObject = {}
+        const testHero = {
+            inventory: ['weapon1','weapon2', 'weapon3', 'weapo']
+        }
     }
 
-    let seccondObject = {
+pickUpItem(newHero, newObject)
 
-    }
-    
-    const chekDagger = document.getElementsByClassName('dagger')
+expect(testHero.inventory[4])
+const chekDagger = document.getElementsByClassName('dagger').addEventListener("click", rest())
+
+
 
 }
+
 
 function equipWeapon() {
-    let pickUpHero = []
-
-    if (pickUpHero = 0){
-        console.log()
+    function equipHero() {
+        function changeWeapon() {
+            const testHero = {
+                weapon: {
+                    type: 'sword',
+                    deamge: 0
+                }
+                const testWeapon = testHero.weapon
+                
+                equipWeapon(testHero)
+                testHero.weapon, )
+            }
+        }
+        let pickUpHero = []
     }
+    
+
+    // if (pickUpHero = 0){
+    //     console.log()
+    // }
 }
 
+
+function UiEquipWeapon() {
+    function(){
+        const bagUI = document.getElementsByClassName('bag')
+
+    }
+
+    function(){
+        const testWeapon = {
+            type: 'test',
+            deamge: 0
+        }
+        hero.inventory[0] = testWeapon
+        document.getElementById('bag').click()
+        hero.weapon = test.weapon
+        if(hero){
+            hero.inventory = []
+        }
+    }
+}
 
 
