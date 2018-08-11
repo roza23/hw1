@@ -1,5 +1,6 @@
 // Write your JS here
 
+// const{ expect } = chai???
 // An object called hero with 5 keys 
 //with various datat-types(string, bolean, array, number) 
 //and the last one equals a nested array
@@ -18,70 +19,58 @@ let hero = {
 
 // Defined the funtions rest, pickUpItem, equipWeapon
 // function rest with no paramerters takes an object ne as an argument named 
-
 // I was trying to reassign the health hero of the previous object in the object of 
 // function rest but it is not working. 
 
 function rest() {
-    function rest2() {
+    function health () {
         const testCreature2  = {health: 2} 
         const testCreature4 = {health: 4}
-       
-    }
-    rest(testCreature2)
-    rest(testCreature4)
 
-    fuction(){
+        rest(testCreature2)
+        rest(testCreature4)
+   }
+    
+    function testC() {
         const testCreature = {}
-        const outPut = rest2(testCreature)
+        const outPut = rest(testCreature)
     }
 }
 
 function UIforRest() {
   function idInn() {
-    cosnt innUI = document.getElementById('inn')
+    cosnt innUI = document.getElementById('inn').addEventListener("");
   }
 
 function clickHealth(){
-    hero.health = 10
-    document.getElementById('inn').click()
-    // expect(hero.health).to.equal(10) ??
-    
-    const checkRest = document.getElementsByClassName('inn').addEventListener("click"); 
-}
-return rest 
-
+        hero.health = 8
+        const checkRest = document.getElementsByClassName('inn').addEventListener("click"); 
+    }           
 }
 
 
-
-//   I thought is was more like this but then I get more errors
-//   let numberHealth = {
-//   newhealth = hero.health[2] 
-//   hero.health = 2 
-//   }
-
-
-
-//
-//
-//
 function pickUpItem() {
-
-    const newHero = {
-        const testObject = {}
-        const testHero = {
-            inventory: ['weapon1','weapon2', 'weapon3', 'weapo']
-        }
+    function(){
+        const newHero = {
+            const testObject = {}
+            const testHero = {
+                inventory: ['weapon1','weapon2', 'weapon3', 'weapon4']
+            }
+            pickUpItem(testHero, testObject)
+            testHero.inventory[1]
+        }    
     }
+}
 
-pickUpItem(newHero, newObject)
+function UIpickUp(){
+    IMGdagger function(){
+        const innUI = docment.getElementById('dagger')
+    }
+}
 
-expect(testHero.inventory[4])
-const chekDagger = document.getElementsByClassName('dagger').addEventListener("click", rest())
-
-
-
+function weaponClicked(){
+    const inventoryCount = hero.inventory.length
+    const innUI = docment.getElementById('dagger').addEventListener("click");
 }
 
 
@@ -96,7 +85,7 @@ function equipWeapon() {
                 const testWeapon = testHero.weapon
                 
                 equipWeapon(testHero)
-                testHero.weapon, )
+                
             }
         }
         let pickUpHero = []
