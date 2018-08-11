@@ -23,22 +23,22 @@ let hero = {
 
 function rest() {
     function health () {
-        const Creature2  = {health: 2} 
-        const Creature4 = {health: 4}
+        const creature2  = {health: 2} 
+        const creature4 = {health: 4}
 
-        rest(Creature2)
-        rest(Creature4)
+        rest(creature2)
+        rest(creature4)
    }
     
     function testC() {
-        const Creature = {}
-        const outPut = rest(Creature)
+        const creature = {}
+        const outPut = rest(creature)
     }
 }
 
 function UIforRest() {
   function idInn() {
-    cosnt innUI = document.getElementById('inn').addEventListener("");
+    cosnt innUI = document.getElementById('inn').addEventListener("...");
   }
 
 function clickHealth(){
@@ -49,20 +49,20 @@ function clickHealth(){
 
 
 function pickUpItem() {
-    function(){
+    function heroPickUp(){
         const newHero = {
-            const testObject = {}
-            const testHero = {
+            const object = {}
+            const hero = {
                 inventory: ['weapon1','weapon2', 'weapon3', 'weapon4']
             }
-            pickUpItem(testHero, testObject)
+            pickUpItem(hero, object)
             testHero.inventory[1]
         }    
     }
 }
 
-function UIpickUp(){
-    IMGdagger function(){
+function uiPickUp(){
+    imgDagger function(){
         const innUI = docment.getElementById('dagger')
     }
 }
@@ -74,10 +74,11 @@ function weaponClicked(){
 
 
 function equipWeapon() {
-    function equipHero() {
+    
         function changeWeapon() {
+            function() {
             const testHero = {
-                weapon: {
+                    weapon: {
                     type: 'sword',
                     deamge: 0
                 }
@@ -86,28 +87,29 @@ function equipWeapon() {
              const inventoryWeapon = testHero.inventory[0]
              equipWeapon(testHero)
         }
+    
         let pickUpHero = []
-    }
+    
     
 function(){
     
     const testHero = { 
-        weapon: { type: 'sword',
-        damage: 5 }, 
-        inventory: [] 
+        weapon: { 
+            type: 'sword',
+            damage: 5 }, 
+            inventory: [] 
     }
+
     const testWeapon = testHero.weapon
     equipWeapon(testHero)
-    expect(testHero.weapon, 'Empty inventory, but the hero`s weapon has been removed').to.equal(testWeapon)
-}
-  
+    testHero.weapon = testWeapon
+    }
 }
 
 
-function UiEquipWeapon() {
+function uiEquipWeapon() {
     function(){
         const bagUI = document.getElementsByClassName('bag')
-
     }
 
     function(){
