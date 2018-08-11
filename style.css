@@ -1,0 +1,26 @@
+.rest {
+    width: 110px;
+    height: 120px;
+    background-color: silver;
+    padding: 2px;
+    margin: 20px;
+    position: relative;
+}
+
+.pick {
+    width: 110px;
+    height: 120px;
+    background-color: silver;
+    padding: 2px;
+    margin: 20px;
+    position: relative;
+}
+
+.equiq {
+    width: 110px;
+    height: 120px; 
+    background-color: silver; 
+    padding: 2px;
+    margin: 20px;
+    position: relative; 
+}
